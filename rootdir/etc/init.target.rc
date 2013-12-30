@@ -311,10 +311,6 @@ on property:qcom.thermal=thermald
 on property:qcom.thermal=thermal-engine
     start thermal-engine
 
-service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
-    user root
-    disabled
-
 service kickstart /system/bin/qcks -i /firmware/image
     oneshot
     disabled

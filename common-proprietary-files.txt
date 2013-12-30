@@ -1,5 +1,4 @@
 # Bins
-bin/mpdecision
 
 # Thermal
 bin/thermald
