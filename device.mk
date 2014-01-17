@@ -76,7 +76,6 @@ PRODUCT_COPY_FILES += \
     device/samsung/d2lte/prebuilt/vzw/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
     device/samsung/d2lte/prebuilt/vzw/lib/libmotricity.so:system/lib/libmotricity.so
 
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
