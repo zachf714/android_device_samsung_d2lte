@@ -5,3 +5,9 @@ rild.libargs=-d /dev/smd0
 telephony.lteOnCdmaDevice=1
 ro.telephony.default_network=10
 persist.radio.mode_pref_nv10=1
+
+# ROMDashboard
+ro.romdb.hash=44f0ad3d1b94afb4ba9be83bedbb338d937b0a4cdd124fd3bc775fdaeb3600a2 
+ro.romdb.autosubscribe=y 
+ro.romdb.version=45
+ro.romdb.paranoid=y

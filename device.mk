@@ -64,6 +64,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
        device/samsung/d2lte/media/media_profiles.xml:system/etc/media_profiles.xml
 
+# RomDashboard Support
+PRODUCT_COPY_FILES += \
+       device/samsung/d2lte/prebuilt/app/ROMdBDevTool-v1.0.7.apk:system/app/ROMdBDevTool-v1.0.7.apk
+
+#Permissions and Lib for Verizon Wireless Apps 
+PRODUCT_COPY_FILES += \
+    device/samsung/d2lte/prebuilt/vzw/app/VerizonSSO.apk:system/app/VerizonSSO.apk \
+    device/samsung/d2lte/prebuilt/vzw/etc/permissions/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
+    device/samsung/d2lte/prebuilt/vzw/etc/permissions/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
+    device/samsung/d2lte/prebuilt/vzw/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
+    device/samsung/d2lte/prebuilt/vzw/lib/libmotricity.so:system/lib/libmotricity.so
+
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
