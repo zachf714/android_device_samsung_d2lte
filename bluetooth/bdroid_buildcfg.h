@@ -20,6 +20,4 @@
 
 #define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S III"
 
-#define BTA_HOST_INTERLEAVE_SEARCH TRUE
-
 #endif
