@@ -220,12 +220,6 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
-
-    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
-
 <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
@@ -302,17 +296,7 @@
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
-    <!-- Panel auto brightness value -->
-    <integer name="config_panelAutoBrightnessValue">1</integer>
-
-    <!-- Device supports LED flashlight -->
-    <bool name="config_enableTorch">true</bool>
-
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
-
-    <!-- Performance profiles -->
-    <string name="config_perf_profile_prop">sys.perf.profile</string>
-    <string name="config_perf_profile_default_entry">1</string>
 
 </resources>
