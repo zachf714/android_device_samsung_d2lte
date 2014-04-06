@@ -40,6 +40,17 @@ TARGET_SCREEN_WIDTH := 480
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=240
 endif
 
+# RomDashboard Support
+PRODUCT_COPY_FILES += \
+       device/samsung/d2lte/prebuilt/app/ROMdBDevTool-v1.0.7.apk:system/app/ROMdBDevTool-v1.0.7.apk
+
+# RomDashboard Props
+PRODUCT_PROPERTY_OVERRIDES += \
+       ro.romdb.hash=6e06eada2e777bea33a75227bdec51dcffe2d95f59dface5253aaf49c1255c84 \
+       ro.romdb.autosubscribe=y \
+       ro.romdb.version=16 \
+       ro.romdb.paranoid=y
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
         device/samsung/d2lte/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
