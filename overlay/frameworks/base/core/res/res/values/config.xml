@@ -289,7 +289,7 @@
     <integer name="config_deviceHardwareKeys">7</integer>
 
     <!-- Disable lockscreen rotation by default -->
-    <bool name="config_enableLockScreenRotation">true</bool>
+    <!--<bool name="config_enableLockScreenRotation">true</bool>-->
 
     <bool name="config_enableWifiDisplay">false</bool>
 
