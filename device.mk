@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
        ro.romdb.hash=6e06eada2e777bea33a75227bdec51dcffe2d95f59dface5253aaf49c1255c84 \
        ro.romdb.autosubscribe=y \
-       ro.romdb.version=27 \
+       ro.romdb.version=28 \
        ro.romdb.paranoid=y
 
 # Audio configuration
