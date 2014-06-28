@@ -29,6 +29,25 @@ PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=320
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+#RomDashBoard Config
+PRODUCT_COPY_FILES += \
+	device/samsung/d2lte/prebuilt/app/ROMdBDevTool-v1.0.7.apk:system/app/ROMdBDevTool-v1.0.7.apk
+
+# RomDashboard Props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.romdb.hash=6e06eada2e777bea33a75227bdec51dcffe2d95f59dface5253aaf49c1255c84 \
+    ro.romdb.autosubscribe=y \
+    ro.romdb.version=38 \
+    ro.romdb.paranoid=y
+
+#Verizon Properties
+PRODUCT_COPY_FILES += \
+	device/samsung/d2lte/prebuilt/app/VerizonSSO.apk:system/blobs/vzw/app/VerizonSSO.apk \
+	evice/samsung/d2lte/prebuilt/etc/permissions/com.vzw.hardware.ehrpd.xml:system/blobs/vzw/etc/permissions/com.vzw.hardware.ehrpd.xml \
+	device/samsung/d2lte/prebuilt/etc/permissions/com.vzw.hardware.lte.xml:system/blobs/vzw/etc/permissions/com.vzw.hardware.lte.xml \
+	device/samsung/d2lte/prebuilt/etc/permissions/com.vzw.vzwapnlib.xml:system/blobs/vzw/etc/permissions/com.vzw.vzwapnlib.xml \
+	device/samsung/d2lte/prebuilt/lib/libmotricity.so:system/blobs/vzw/lib/libmotricity.so
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     device/samsung/d2lte/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
