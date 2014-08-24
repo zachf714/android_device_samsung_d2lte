@@ -40,13 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.romdb.version=49 \
     ro.romdb.paranoid=y
 
-#Verizon Properties
-PRODUCT_COPY_FILES += \
-	device/samsung/d2lte/prebuilt/app/VerizonSSO.apk:system/blobs/vzw/app/VerizonSSO.apk \
-	device/samsung/d2lte/prebuilt/etc/permissions/com.vzw.hardware.ehrpd.xml:system/blobs/vzw/etc/permissions/com.vzw.hardware.ehrpd.xml \
-	device/samsung/d2lte/prebuilt/etc/permissions/com.vzw.hardware.lte.xml:system/blobs/vzw/etc/permissions/com.vzw.hardware.lte.xml \
-	device/samsung/d2lte/prebuilt/etc/permissions/com.vzw.vzwapnlib.xml:system/blobs/vzw/etc/permissions/com.vzw.vzwapnlib.xml \
-	device/samsung/d2lte/prebuilt/lib/libmotricity.so:system/blobs/vzw/lib/libmotricity.so
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
